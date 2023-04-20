@@ -48,7 +48,7 @@ class Package:
         return hash(self.attrs())
 
 
-def get_packages(explicit=False):
+def get_packages(explicit: bool = False) -> SortedSet[Package]:
     # todo : add safety : check if pamac exist
     raw_package_list = subprocess.run(
         COMMAND_GET_EXPLICIT_PACKAGE if explicit else COMMAND_GET_PACKAGE,
