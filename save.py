@@ -45,7 +45,7 @@ class Package:
         return isinstance(o, Package) and o.attrs() == self.attrs()
 
     def __hash__(self):
-        return hash(self.attrs())
+        return hash(self.name)
 
 
 def get_packages(explicit: bool = False) -> SortedSet[Package]:
