@@ -4,6 +4,8 @@ import subprocess
 
 from sortedcontainers import SortedSet
 
+# Todo : clean and better organize save functions
+
 COMMAND_GET_PACKAGE = ['/usr/bin/pamac', 'list']
 COMMAND_GET_EXPLICIT_PACKAGE = ['/usr/bin/pamac', 'list', '-e']
 
